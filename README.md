@@ -6,7 +6,7 @@
 ![Curl Round-Robin](screenshots/curl_task1.png)
 
 ### Скриншот состояния HAProxy:
-![HAProxy Status](screenshots/status_haproxy.png)
+![HAProxy Status](screenshots/status_haproxy_extra.png)
 
 ### Конфигурационный файл HAProxy:
 ![HAProxy Config](screenshots/haproxy_cfg.png)
