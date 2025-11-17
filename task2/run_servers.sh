@@ -1,12 +1,12 @@
 #!/bin/bash
 
-cd ~/haproxy-hw/task2/server1
-python3 -m http.server 8101 &
+echo "Запуск Server 1 на порту 8001..."
+nohup python3 server1.py &
 
-cd ~/haproxy-hw/task2/server2
-python3 -m http.server 8102 &
+echo "Запуск Server 2 на порту 8002..."
+nohup python3 server2.py &
 
-cd ~/haproxy-hw/task2/server3
-python3 -m http.server 8103 &
+echo "Запуск Server 3 на порту 8003..."
+nohup python3 server3.py &
 
-echo "Servers for Task 2 started!"
+echo "Все три сервера запущены!"
