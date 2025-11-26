@@ -25,8 +25,7 @@ curl http://127.0.0.1/
 
 ````
 
-
-#Задание 2 - HAProxy + Python сервера
+#  Задание 2 - HAProxy + Python сервера
 
 ## Описание
 Три Python сервера на портах 8001, 8002 и 8003.  
@@ -35,12 +34,12 @@ HAProxy балансирует HTTP-трафик по домену example.local
 - Server 2: вес 3
 - Server 3: вес 4
 
-# Запуск тестовых серверов для задания 2
+# Запуск тестовых серверов 
 ```bash
 
 bash scripts/run_servers_task2.sh
 ````
-# Запуск HAProxy для задания 2
+# Запуск HAProxy
 
 ```bash
 sudo haproxy -f configs/task2-haproxy.cfg
