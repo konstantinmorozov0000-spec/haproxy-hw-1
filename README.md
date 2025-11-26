@@ -3,29 +3,6 @@
 В рамках домашнего задания настроены балансировщики HAProxy и тестовые Python-серверы.  
 Все конфигурационные файлы вынесены в каталог `configs/`, а скрипты запуска серверов — в каталог `scripts/`.  
 
-## Структура проекта
-
-haproxy-hw-1/
-├── configs/
-│ ├── task1-haproxy.cfg
-│ └── task2-haproxy.cfg
-├── task1/
-│ ├── server1
-│ ├── server2
-├── task2/
-│ ├── server1.py
-│ ├── server2.py
-│ ├── server3.py
-├── scripts/
-│ ├── run_servers.sh
-│ └── run_servers_task2.sh
-└── README.md
-
-
----
-
-# Задание 1 — Балансировка Round-Roby
-
 ---
 
 # Задание 1 — Балансировка Round-Robin
