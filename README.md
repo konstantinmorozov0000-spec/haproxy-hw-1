@@ -27,7 +27,7 @@ for i in {1..6}; do curl -s http://localhost:8080 && echo; done
 ![Проверка балансировки Round-Robin](screenshots/task1.png)
 
 
-#  Задание 2 - HAProxy + Python сервера
+#  Задание 2 - Балансировка HAProxy Weighted Round Robin на 7 уровне
 
 ## Описание
 Три Python сервера на портах 8001, 8002 и 8003.  
