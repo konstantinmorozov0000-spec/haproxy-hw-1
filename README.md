@@ -17,7 +17,8 @@ bash scripts/run_servers.sh
 ```bash
 sudo haproxy -f configs/task1-haproxy.cfg
 ```` 
-### Проверка работы
+### Проверка работы балансировщика Round-robin на 4 уровне
+
 ```bash
 for i in {1..6}; do curl -s http://localhost:8080 && echo; done
 
@@ -47,9 +48,13 @@ sudo haproxy -f configs/task2-haproxy.cfg
 ````
 
 
-## Проверка
-- http://example.local → распределение запросов между серверами
-- http://localhost → 503
+## Проверка работы балансировщика Weighted Round Robin на 7 уровне
+
+```bash
+for i in {1..10}; do curl -s -H "Host: example.local" http://127.0.0.1; echo; done
+````
+
+![Проверка балансировки Round-Robin](screenshots/task2.png)
 
 ### Конфигурационный файл HAProxy
 
