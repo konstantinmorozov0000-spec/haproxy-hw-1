@@ -54,7 +54,12 @@ sudo haproxy -f configs/task2-haproxy.cfg
 for i in {1..10}; do curl -s -H "Host: example.local" http://127.0.0.1; echo; done
 ````
 
-![Проверка балансировки Round-Robin](screenshots/task2.png)
+![Проверка балансировки Round-Robin](screenshots/task2.1.png)
+
+Результат запроса на сервер без доменного имени
+
+![task2.1](screenshots/task2.png)
+
 
 ### Конфигурационный файл HAProxy
 
